@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	
+	"id": "nonarrator",
+	"version": "${version}",
+	"name": "NoNarrator",
+	"description": "A simple mod that disables the narrator feature.",
+	"license": "MIT",
+	"icon": "assets/nonarrator/icon.png",
+	
+	"authors": ["545u"],
+	"contact": {
+		"sources": "https://github.com/545u/NoNarrator"
+	},
+	
+	"environment": "client",
+	
+	"mixins": ["nonarrator.mixins.json"],
+	
+	"depends": {
+		"fabricloader": ">=0.14.11",
+		"minecraft": "1.19.*",
+		"java": ">=17"
+	}
+}
