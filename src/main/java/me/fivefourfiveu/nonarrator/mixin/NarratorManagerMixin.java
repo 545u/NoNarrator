@@ -1,4 +1,4 @@
-package me.fivefourfiveu.nonarrator;
+package me.fivefourfiveu.nonarrator.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
