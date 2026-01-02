@@ -3,15 +3,6 @@ plugins {
 	id 'maven-publish'
 }
 
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
-	}
-}
-
-sourceCompatibility = JavaVersion.VERSION_21
-targetCompatibility = JavaVersion.VERSION_21
-
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
