@@ -12,12 +12,17 @@ import net.minecraft.client.util.NarratorManager;
 @Mixin(NarratorManager.class)
 public class NarratorManagerMixin {
 	@Inject(method = "getNarratorMode", at = @At("HEAD"), cancellable = true)
-	private void getNarrator(CallbackInfoReturnable<NarratorMode> ci) {
+	private void getNarratorMode(CallbackInfoReturnable<NarratorMode> ci) {
 		ci.setReturnValue(NarratorMode.OFF);
 	}
 	
 	@Inject(method = "onModeChange", at = @At("HEAD"), cancellable = true)
 	private void onModeChange(CallbackInfo ci) {
 		ci.cancel();
+	}
+	
+	@Inject(method = "isActive", at = @At("HEAD"), cancellable = true)
+	private void isActive(CallbackInfoReturnable<Boolean> ci) {
+		ci.setReturnValue(false);
 	}
 }

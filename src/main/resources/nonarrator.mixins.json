@@ -4,9 +4,9 @@
 	"package": "me.fivefourfiveu.nonarrator.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
+		"GameOptionsMixin",
+		"GameOptionsScreenMixin",
 		"NarratorManagerMixin"
 	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+	"injectors": {"defaultRequire": 1}
 }
